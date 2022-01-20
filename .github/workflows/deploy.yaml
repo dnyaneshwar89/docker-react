@@ -1,0 +1,12 @@
+name: ci-cd
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  Build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: "docker build -t dnyaneshwar89/docker-react -f Dockerfile.dev ."
