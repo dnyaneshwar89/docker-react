@@ -16,4 +16,4 @@ jobs:
       - name: BUILD THE IMAGE
         run: "docker build -t dnyaneshwar89/docker-react -f Dockerfile.dev ."
       - name: RUN ALL TESTS
-        run: docker run dnyaneshwar89/docker-react npm run test -- --coverage
+        run: docker run -e CI=true dnyaneshwar89/docker-react npm run test -- --coverage
