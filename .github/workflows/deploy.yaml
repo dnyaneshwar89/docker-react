@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  BUILD IMAGE:
+  BUILD_IMAGE:
     runs-on: "ubuntu-latest"
     steps:
       - name: LOGIN TO DOCKER
